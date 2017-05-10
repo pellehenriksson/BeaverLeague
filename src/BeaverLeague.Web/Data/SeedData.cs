@@ -26,7 +26,7 @@ namespace BeaverLeague.Web.Data
                 };
                 foreach (var golfer in golfers)
                 {
-                    hasher.SetPassword(golfer, "123");                  
+                    hasher.SetPassword(golfer, "123");
                     db.Add(golfer);
                 }
                 db.SaveChanges();

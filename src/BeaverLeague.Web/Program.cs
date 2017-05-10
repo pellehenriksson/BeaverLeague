@@ -55,12 +55,12 @@ namespace BeaverLeague.Web
             {
                 Console.WriteLine("Exiting on stop command");
                 Environment.Exit(0);
-            }                 
+            }
         }
 
         private static LeagueDb GetLeagueDb(IServiceScope services)
         {
-            var db = services.ServiceProvider.GetRequiredService<LeagueDb>();           
+            var db = services.ServiceProvider.GetRequiredService<LeagueDb>();
             return db;
         }
     }

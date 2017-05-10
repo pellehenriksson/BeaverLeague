@@ -6,7 +6,6 @@ namespace BeaverLeague.Web.Security
     {
         public UserIsAdminAttribute() : base("isAdmin")
         {
-      
-        }        
+        }
     }
 }

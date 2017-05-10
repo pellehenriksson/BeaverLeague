@@ -8,7 +8,6 @@ namespace BeaverLeague.Web.Services
     {
         public void PopulateValues(ViewLocationExpanderContext context)
         {
-            
         }
 
         public IEnumerable<string> ExpandViewLocations(
@@ -17,7 +16,7 @@ namespace BeaverLeague.Web.Services
         {
             var controllerDescriptor = context.ActionContext.ActionDescriptor as ControllerActionDescriptor;
             var featureName = controllerDescriptor?.Properties["feature"] as string;
-                    
+
             foreach (var location in viewLocations)
             {
                 yield return location.Replace("{3}", featureName);

@@ -7,7 +7,6 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Serilog;
-using Serilog.Formatting.Json;
 
 namespace BeaverLeague.Web
 {    
@@ -37,7 +36,7 @@ namespace BeaverLeague.Web
             services.AddCustomMvc();
             services.AddSecurity();
             services.AddCustomMediator();
-            services.AddDataStores(Configuration.GetConnectionString(nameof(LeagueDb)));            
+            services.AddDataStores(Configuration.GetConnectionString(nameof(LeagueDb)));
         }
 
         public void Configure(IApplicationBuilder app)

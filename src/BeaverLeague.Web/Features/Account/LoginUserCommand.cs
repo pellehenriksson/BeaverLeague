@@ -34,6 +34,7 @@ namespace BeaverLeague.Web.Features.Account
                 command.EmailAddress,
                 command.Password,
                 command.RememberMe);
+
             return result;
         }
     }

@@ -1,6 +1,5 @@
 ﻿using BeaverLeague.Core.Models;
 using BeaverLeague.Web.Security;
-using BeaverLeague.Web.Services;
 using Xunit;
 
 namespace BeaverLeague.Tests.Web.Services

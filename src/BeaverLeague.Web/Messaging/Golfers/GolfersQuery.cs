@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using BeaverLeague.Core.Models;
 using BeaverLeague.Data;
 using MediatR;
 
@@ -19,11 +18,17 @@ namespace BeaverLeague.Web.Messaging.Golfers
     public class GolferSummary
     {
         public int Id { get; set; }
+
         public int MembershipId { get; set; }
+
         public float Handicap { get; set; }
+
         public string FirstName { get; set; }
+
         public string LastName { get; set; }
+
         public bool IsAdmin { get; set; }
+
         public bool IsActive { get; set; }
     }
 

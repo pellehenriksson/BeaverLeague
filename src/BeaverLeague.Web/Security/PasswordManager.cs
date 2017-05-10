@@ -20,14 +20,17 @@ namespace BeaverLeague.Web.Security
         public bool VerifyPassword(Golfer golfer, string password)
         {
             var result = _hasher.VerifyHashedPassword(golfer, golfer.PasswordHash, password);
+
             if (result == PasswordVerificationResult.SuccessRehashNeeded)
             {
                 throw new Exception("Password rehash needed");
             }
+
             if (result == PasswordVerificationResult.Success)
             {
                 return true;
             }
+
             return false;
         }
 

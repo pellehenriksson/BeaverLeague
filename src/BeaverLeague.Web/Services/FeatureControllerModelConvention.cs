@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
+﻿using System.IO;
 using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc.ApplicationModels;
 
 namespace BeaverLeague.Web.Services
@@ -16,7 +13,7 @@ namespace BeaverLeague.Web.Services
             controller.Properties.Add("feature", featureName);
         }
 
-        private string DeriveFeatureFolder(string @namespace)
+        private static string DeriveFeatureFolder(string @namespace)
         {
             var result = @namespace?.Split('.')
                   .Skip(2)
